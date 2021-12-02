@@ -17,6 +17,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="7e65a704-fc60-465c-86ff-a00ed8c5e5a3" />
+  </component>
   <component name="ProjectId" id="21PyF6sXeGEYQUfJLdJ3jKqlPdK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -26,7 +29,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RunManager" selected="Python.main">
     <configuration name="Layers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
@@ -117,6 +120,9 @@
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -155,18 +161,34 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="279" y="63" key="SettingsEditor" timestamp="1637857039469">
+    <state x="361" y="79" key="#Notifications" timestamp="1638486952790">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="279" y="63" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1637857039469" />
+    <state x="361" y="79" key="#Notifications/0.0.1536.834@0.0.1536.834" timestamp="1638486952790" />
+    <state x="548" y="175" key="FileChooserDialogImpl" timestamp="1638487409989">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="548" y="175" key="FileChooserDialogImpl/0.0.1536.834@0.0.1536.834" timestamp="1638487409989" />
+    <state x="279" y="63" key="SettingsEditor" timestamp="1638487426516">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="279" y="63" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1638487426516" />
+    <state x="361" y="154" key="Vcs.Push.Dialog.v2" timestamp="1638487455362">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="361" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1638487455362" />
     <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1638097039875">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.834@0.0.1536.834" timestamp="1638097039875" />
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1638112345677">
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1638484851400">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1638112345677" />
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1638484851400" />
+    <state x="580" y="337" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638487433697">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="580" y="337" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.834@0.0.1536.834" timestamp="1638487433697" />
     <state x="431" y="155" width="672" height="678" key="search.everywhere.popup" timestamp="1638089506097">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
