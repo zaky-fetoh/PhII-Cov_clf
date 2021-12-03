@@ -19,7 +19,7 @@ class Network(object):
         self.opt = optim.Adam(self.network.parameters()) if opt is None else opt
         self.augm = dorg.get_aug() if augm is None else augm
         self.trldr, self.valdr, self.teldr = dorg.getloaders(self.augm[0],
-                                                             bs=bs) if lders is None else lders
+                                        bs=bs) if lders is None else lders
 
     def fit(self, epoch=20, ):
         self.train_profile = train_and_validate(self.network,
