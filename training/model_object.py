@@ -41,7 +41,7 @@ class Network(object):
 
     def test(self):
         correct, total = 0, 0
-        inds = self.teldr.dataset.indices.detach().cpu().numpy()
+        inds = self.teldr.dataset.indices
         dts = self.teldr.dataset.dataset.pathset
         for i in inds:
             obj = dts[i]
