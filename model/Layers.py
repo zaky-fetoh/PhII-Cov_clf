@@ -36,8 +36,7 @@ class Conv2DLinSepKer(nn.Module):
         self.pointwise = nn.Conv2d(in_chunnels, out_chunnels, 1)
 
     def forward(self, X):
-        for ly in [self.X_conv, self.Y_conv,
-                   self.pointwise]:
+        for ly in [self.X_conv, self.Y_conv, self.pointwise]:
             X = self.actfunc(ly(X))
         return X
 
@@ -49,8 +48,8 @@ class DConv2d(nn.Module):
                  fx = Conv2DLinSepKer):
         super(DConv2d, self).__init__()
         self.lyrs = nn.ModuleList()
-        ips = in_chunnels
         self.actfunc = f.leaky_relu
+        ips = in_chunnels
         for lk in kernels:
             self.lyrs += [nn.Sequential(
                 fx(ips, out_chunnel, lk),
