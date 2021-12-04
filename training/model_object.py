@@ -41,7 +41,7 @@ class Network(object):
 
     def load(self, ep):
         load_model(model=self.network, ep_num=ep)
-        
+
         oltr_pr = load_train_hist(ep)
         self.train_profile.update(oltr_pr)
 
