@@ -21,12 +21,14 @@ class Network(object):
         self.trldr, self.valdr, self.teldr = dorg.getloaders(self.augm[0],
                                         bs=bs) if lders is None else lders
         self.ustep = ustep
+        self.train_profile = dict()
 
     def fit(self, epoch=20,startwith=0 ):
-        self.train_profile = train_and_validate(self.network,
+        tr_pro = train_and_validate(self.network,
                                                 self.trldr, self.valdr, epoch,
                                                 self.augm,startwith, self.loss_fn, self.opt,
                                                 self.ustep,self.device)
+        self.train_profile.update(tr_pro)
         return dict(self.train_profile)
 
     def predict(self, im, view_num_perscale=20):
@@ -39,6 +41,14 @@ class Network(object):
 
     def load(self, ep):
         load_model(model=self.network, ep_num=ep)
+        
+        oltr_pr = load_train_hist(ep)
+        self.train_profile.update(oltr_pr)
+
+        augfr = load_train_hist(ep,name='augfr',)
+        aug, si = self.augm
+        aug.transforms[si].ScaleHist = np.array(augfr)
+
 
     def test(self):
         correct, total = 0, 0
