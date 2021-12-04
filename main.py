@@ -10,6 +10,6 @@ test
 
 if __name__ == '__main__':
     mdl.t.cuda.empty_cache()
-    mobj = tr.Network(bs=128,)
-
-    thist = mobj.test()
+    mobj = tr.Network(bs=32,ustep=128)
+    mobj.fit()
+    #thist = mobj.test()
