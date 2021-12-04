@@ -25,7 +25,8 @@ class Network(object):
 
     def fit(self, epoch=20,startwith=0 ):
         tr_pro = train_and_validate(self.network,
-                                                self.trldr, self.valdr, epoch,
+                                                self.trldr, self.valdr,dict(self.train_profile),
+                                                epoch,
                                                 self.augm,startwith, self.loss_fn, self.opt,
                                                 self.ustep,self.device)
         self.train_profile.update(tr_pro)

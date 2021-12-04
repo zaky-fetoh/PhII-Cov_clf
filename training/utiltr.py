@@ -149,12 +149,11 @@ def validate_(net, val_loader, criterion, augm,
     return [llis, alis]
 
 
-def train_and_validate(net, trldr, valdr,
+def train_and_validate(net, trldr, valdr, tr_profile,
                        epochs=20, augm=None, startwith=0,
                        criterion=None, opt_fn=None, ustep = None,
                        device=t.device('cuda' if t.cuda.is_available() else 'cpu'),
                        ):
-    tr_profile = dict()
     aug, si = augm
     net.to(device=device)
     for e in range(epochs):

@@ -12,7 +12,7 @@ def norma(x):
 
 
 class Freq_Jitter(object):
-    def __init__(self, mu=1, sig=.4,
+    def __init__(self, mu=1, sig=.3,
                  multip=True):
         self.mu, self.sig = mu, sig
         self.eq = np.multiply if multip else np.add
