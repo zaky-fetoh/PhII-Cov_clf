@@ -2,11 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weights/hist18.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr0.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr1.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr10.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr11.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr12.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr14.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr15.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr16.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr17.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr18.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr19.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr2.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr20.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr21.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr22.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr3.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr4.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr5.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr6.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr7.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr8.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/augfr9.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/fixDistrMetr.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist0.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist1.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist10.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist11.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist12.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist14.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist15.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist16.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist17.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist19.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist2.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist20.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist21.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist22.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist23.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist3.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist4.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist5.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist6.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist7.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist8.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist9.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/weight23.pth" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_org/augmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_org/augmentation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/training/utiltr.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/utiltr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/weight13.pth" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +83,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.fixDistrMetr">
     <configuration name="Layers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,27 +126,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="augmentation" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="PhII Cov_clf" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_org" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_org/augmentation.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="dataset" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -117,6 +139,24 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_org/dataset.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="fixDistrMetr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="PhII Cov_clf" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weights" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weights/fixDistrMetr.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -148,11 +188,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.fixDistrMetr" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.main" />
-        <item itemvalue="Python.SPP_layer" />
       </list>
     </recent_temporary>
   </component>
@@ -181,10 +221,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="544" y="228" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1638629041012" />
-    <state x="0" y="171" key="#xdebugger.XInspectDialog" timestamp="1638639863542">
+    <state x="0" y="171" key="#xdebugger.XInspectDialog" timestamp="1638641565882">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="0" y="171" key="#xdebugger.XInspectDialog/0.0.1536.834@0.0.1536.834" timestamp="1638639863542" />
+    <state x="0" y="171" key="#xdebugger.XInspectDialog/0.0.1536.834@0.0.1536.834" timestamp="1638641565882" />
     <state x="548" y="175" key="FileChooserDialogImpl" timestamp="1638487409989">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
