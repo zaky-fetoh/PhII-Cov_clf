@@ -150,7 +150,7 @@ def validate_(net, val_loader, criterion, augm,
 
 
 def train_and_validate(net, trldr, valdr,
-                       epochs=20, augm=None,
+                       epochs=20, augm=None, startwith=0,
                        criterion=None, opt_fn=None, ustep = None,
                        device=t.device('cuda' if t.cuda.is_available() else 'cpu'),
                        ):
@@ -165,13 +165,13 @@ def train_and_validate(net, trldr, valdr,
                                 opt_fn, augm, ustep,
                                 device)
 
-        save_model(net, e)
+        save_model(net, e+startwith)
 
         net.eval()
         tr_profile[e] += validate_(net, valdr, criterion,
                                    augm, device)
-        save_train_hist(tr_profile, e)
+        save_train_hist(tr_profile, e+startwith)
         save_train_hist(aug.transforms[si].ScaleHist.tolist(),
-                        e, name='augfr')
+                        e+startwith, name='augfr')
 
     return tr_profile

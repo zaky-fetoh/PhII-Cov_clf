@@ -22,10 +22,10 @@ class Network(object):
                                         bs=bs) if lders is None else lders
         self.ustep = ustep
 
-    def fit(self, epoch=20, ):
+    def fit(self, epoch=20,startwith=0 ):
         self.train_profile = train_and_validate(self.network,
                                                 self.trldr, self.valdr, epoch,
-                                                self.augm, self.loss_fn, self.opt,
+                                                self.augm,startwith, self.loss_fn, self.opt,
                                                 self.ustep,self.device)
         return dict(self.train_profile)
 

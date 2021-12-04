@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist6.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/weight9.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/model_object.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/model_object.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/training/utiltr.py" beforeDir="false" afterPath="$PROJECT_DIR$/training/utiltr.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,13 +27,16 @@
     <option name="defaultAccountId" value="7e65a704-fc60-465c-86ff-a00ed8c5e5a3" />
   </component>
   <component name="ProjectId" id="21PyF6sXeGEYQUfJLdJ3jKqlPdK" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
@@ -162,6 +169,9 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="361" y="79" key="#Notifications" timestamp="1638486952790">
       <screen x="0" y="0" width="1536" height="834" />
@@ -171,6 +181,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="544" y="228" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1638629041012" />
+    <state x="0" y="171" key="#xdebugger.XInspectDialog" timestamp="1638633988842">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="0" y="171" key="#xdebugger.XInspectDialog/0.0.1536.834@0.0.1536.834" timestamp="1638633988842" />
     <state x="548" y="175" key="FileChooserDialogImpl" timestamp="1638487409989">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
