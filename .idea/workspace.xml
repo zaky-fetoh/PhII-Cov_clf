@@ -1,56 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weights/augfr0.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr1.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr10.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr11.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr12.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr14.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr15.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr16.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr17.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr18.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr19.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr2.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr20.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr21.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr22.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr3.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr4.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr5.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr6.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr7.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr8.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/augfr9.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/fixDistrMetr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist0.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist1.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist10.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist11.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist12.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist14.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist15.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist16.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist17.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist19.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist2.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist20.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist21.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist22.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist23.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist3.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist4.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist5.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist6.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist7.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist8.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist9.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/weight23.pth" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weights/weight13.pth" beforeDir="false" />
-    </list>
+    <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

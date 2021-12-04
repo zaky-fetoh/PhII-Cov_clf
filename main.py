@@ -9,7 +9,7 @@ test
 """
 
 if __name__ == '__main__':
-    pres = 16
+    pres = 22
     mdl.t.cuda.empty_cache()
     mobj = tr.Network(bs=16,ustep=256,)
     mobj.opt = tr.optim.Adam(mobj.network.parameters(),1e-4)
