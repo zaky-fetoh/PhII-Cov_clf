@@ -94,24 +94,28 @@ def predictby_scahist(net, im, augm,
     return out
 
 
-def train_(net, train_loader, criterion, opt_fn, augm,
+def train_(net, train_loader, criterion, opt_fn, augm, ustep,
            device=t.device('cuda' if t.cuda.is_available() else 'cpu'),
            ):
     aug, si = augm
-    llis, alis = list(), list()
+    llis, alis, samples = list(), list(), 0
     aug.transforms[si].unfrez_count()
     for imgs, target in train_loader:
         aug.transforms[si].new_scale()
         imgs = imgs.to(device=device)
         target = target.to(device=device)
+        samples += imgs.shape[0]
 
         pred = net(imgs)
 
         loss = criterion(pred, target)
-
-        opt_fn.zero_grad()
         loss.backward()
-        opt_fn.step()
+        if samples >= ustep:
+            print('netupdated:', samples)
+            nn.utils.clip_grad_value_(model.parameters(), 0.1)
+            opt_fn.step()
+            opt_fn.zero_grad()
+            samples = 0
 
         llis.append(loss.item())
         alis.append(accuracy(pred, target).item())
@@ -147,7 +151,7 @@ def validate_(net, val_loader, criterion, augm,
 
 def train_and_validate(net, trldr, valdr,
                        epochs=20, augm=None,
-                       criterion=None, opt_fn=None,
+                       criterion=None, opt_fn=None, ustep = None,
                        device=t.device('cuda' if t.cuda.is_available() else 'cpu'),
                        ):
     tr_profile = dict()
@@ -158,7 +162,7 @@ def train_and_validate(net, trldr, valdr,
 
         net.train()
         tr_profile[e] += train_(net, trldr, criterion,
-                                opt_fn, augm,
+                                opt_fn, augm, ustep,
                                 device)
 
         save_model(net, e)

@@ -10,7 +10,7 @@ import torch as t
 class Network(object):
     def __init__(self, network=None, augm=None,
                  lders=None, cfx=mdl.Conv2DLinSepKer,
-                 bs=128, loss_fn=None, opt=None, cls_num=2,
+                 bs=32,ustep=128, loss_fn=None, opt=None, cls_num=2,
                  device=t.device('cuda' if t.cuda.is_available() else 'cpu')
                  ):
         self.cfx, self.device, self.cls_num = str(cfx), device, cls_num
@@ -20,12 +20,13 @@ class Network(object):
         self.augm = dorg.get_aug() if augm is None else augm
         self.trldr, self.valdr, self.teldr = dorg.getloaders(self.augm[0],
                                         bs=bs) if lders is None else lders
+        self.ustep = ustep
 
     def fit(self, epoch=20, ):
         self.train_profile = train_and_validate(self.network,
                                                 self.trldr, self.valdr, epoch,
                                                 self.augm, self.loss_fn, self.opt,
-                                                self.device)
+                                                self.ustep,self.device)
         return dict(self.train_profile)
 
     def predict(self, im, view_num_perscale=20):
