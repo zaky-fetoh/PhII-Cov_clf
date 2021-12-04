@@ -112,7 +112,7 @@ def train_(net, train_loader, criterion, opt_fn, augm, ustep,
         loss.backward()
         if samples >= ustep:
             print('netupdated:', samples)
-            nn.utils.clip_grad_value_(model.parameters(), 0.1)
+            nn.utils.clip_grad_value_(net.parameters(), 0.1)
             opt_fn.step()
             opt_fn.zero_grad()
             samples = 0
