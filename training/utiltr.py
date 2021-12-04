@@ -158,6 +158,7 @@ def train_and_validate(net, trldr, valdr,
     aug, si = augm
     net.to(device=device)
     for e in range(epochs):
+        e += startwith
         tr_profile[e] = list()
 
         net.train()
@@ -165,13 +166,13 @@ def train_and_validate(net, trldr, valdr,
                                 opt_fn, augm, ustep,
                                 device)
 
-        save_model(net, e+startwith)
+        save_model(net, e)
 
         net.eval()
         tr_profile[e] += validate_(net, valdr, criterion,
                                    augm, device)
-        save_train_hist(tr_profile, e+startwith)
+        save_train_hist(tr_profile, e)
         save_train_hist(aug.transforms[si].ScaleHist.tolist(),
-                        e+startwith, name='augfr')
+                        e, name='augfr')
 
     return tr_profile
