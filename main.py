@@ -13,6 +13,6 @@ if __name__ == '__main__':
     mdl.t.cuda.empty_cache()
     mobj = tr.Network(bs=16,ustep=256,)
     mobj.opt = tr.optim.Adam(mobj.network.parameters(),1e-4)
-    mobj.load(pres)
-    mobj.fit(startwith=pres+1)
+    # mobj.load(pres)
+    mobj.fit(epoch=30,startwith=0)
     #mobj.test()

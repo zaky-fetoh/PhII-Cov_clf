@@ -23,7 +23,7 @@ class Network(object):
         self.ustep = ustep
         self.train_profile = dict()
 
-    def fit(self, epoch=20,startwith=0 ):
+    def fit(self, epoch=30,startwith=0 ):
         tr_pro = train_and_validate(self.network,
                                                 self.trldr, self.valdr,dict(self.train_profile),
                                                 epoch,
