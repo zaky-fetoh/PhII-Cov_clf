@@ -1,0 +1,1 @@
+a model without added batch Norm and with a dropout @ start of dnse base
