@@ -68,7 +68,7 @@ class Conv2DLinSepKer(nn.Module):
 
 class DConv2d(nn.Module):
     def __init__(self,in_chunnels, out_chunnel,
-                 kernels = [3, 5, 7, ]*2,
+                 kernels = [3, 5, ]*2,
                  fx = Conv2DLinSepKer):
         super(DConv2d, self).__init__()
         self.lyrs = nn.ModuleList()
