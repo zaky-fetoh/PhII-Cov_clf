@@ -43,7 +43,7 @@ class Conv2DLinSepKer(nn.Module):
 
 
 class DConv2d(nn.Module):
-    #modified used addition instead f cating
+    #modified : used addition instead f cating
     def __init__(self,in_chunnels, out_chunnel,
                  kernels = [3, 5, 7, ]*3,
                  fx = Conv2DLinSepKer):
@@ -59,7 +59,8 @@ class DConv2d(nn.Module):
             ips = out_chunnel
     def forward(self, X):
         #print(X.shape)
-        for lyr in self.lyrs:
+        X = self.actfunc(self.lyrs[0](X))
+        for lyr in self.lyrs[1:]:
             o = self.actfunc(lyr(X))
             X += o
         return o
