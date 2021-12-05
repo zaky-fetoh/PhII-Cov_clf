@@ -12,6 +12,7 @@ class CNN (nn.Module):
         super(CNN, self).__init__()
         self.convbase = nn.ModuleList()
         self.densebase = nn.ModuleList()
+        self.convbase.append(nn.BatchNorm2d(inshape))#######
         inps,pc = inshape, 3
         for d in cdepth:
             self.convbase.append(DConv2d(inps,d,fx=cfx))
@@ -22,7 +23,7 @@ class CNN (nn.Module):
         self.convbase.append(Single_level_SSP2D(SPP_lvl))
         inps = SPP_lvl* SPP_lvl *d
 
-        self.densebase.append(nn.Dropout(.4))
+        #self.densebase.append(nn.Dropout(.4))
         for d in fdepth :
             self.densebase.append(nn.Linear(inps, d))
             self.densebase.append(nn.LeakyReLU())
