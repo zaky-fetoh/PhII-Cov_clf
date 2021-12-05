@@ -9,10 +9,10 @@ test
 """
 
 if __name__ == '__main__':
-    pres = 29
+    pres = 59
     mdl.t.cuda.empty_cache()
     mobj = tr.Network(bs=16,ustep=256,)
-    mobj.opt = tr.optim.Adam(mobj.network.parameters(),1e-3)
+    mobj.opt = tr.optim.Adam(mobj.network.parameters(),1e-5)
     mobj.load(pres)
-    mobj.fit(epoch=30,startwith=pres+1)
+    mobj.fit(epoch=20,startwith=pres+1)
     #mobj.test()

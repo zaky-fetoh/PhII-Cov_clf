@@ -23,5 +23,3 @@ def load_train_hist(file_name):
     with open(file_name, 'rb')as file:
         hist = pickle.load(file)
     return hist
-acc = fix()
-save_train_hist(acc, 23,outPath='./')

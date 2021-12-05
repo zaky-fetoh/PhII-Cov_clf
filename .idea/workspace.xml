@@ -2,7 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/weights/augfr59.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist59.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/weight59.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/augfr29.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/fixDistrMetr.py" beforeDir="false" afterPath="$PROJECT_DIR$/weights/fixDistrMetr.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/git" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/hist29.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/hist51XX.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/weight29.pth" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,10 +205,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1638487455362" />
-    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1638687207357">
+    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1638717908343">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.834@0.0.1536.834" timestamp="1638687207357" />
+    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.834@0.0.1536.834" timestamp="1638717908343" />
     <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1638626371149">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
