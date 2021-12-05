@@ -40,31 +40,10 @@ class Conv2DLinSepKer(nn.Module):
             X = self.actfunc(ly(X))
         return X
 
-
-
-class DConv2d(nn.Module):
-    #modified : used addition instead f cating
-    def __init__(self,in_chunnels, out_chunnel,
-                 kernels = [3, 5, 7, ]*3,
-                 fx = Conv2DLinSepKer):
-        super(DConv2d, self).__init__()
-        self.lyrs = nn.ModuleList()
-        self.actfunc = f.leaky_relu
-        ips = in_chunnels
-        for lk in kernels:
-            self.lyrs += [nn.Sequential(
-                fx(ips, out_chunnel, lk),
-                nn.BatchNorm2d(out_chunnel),
-            )]
-            ips = out_chunnel
-    def forward(self, X):
-        #print(X.shape)
-        X = self.actfunc(self.lyrs[0](X))
-        for lyr in self.lyrs[1:]:
-            o = self.actfunc(lyr(X))
-            X += o
-        return o
+#
+#
 # class DConv2d(nn.Module):
+#     #modified : used addition instead f cating
 #     def __init__(self,in_chunnels, out_chunnel,
 #                  kernels = [3, 5, 7, ]*3,
 #                  fx = Conv2DLinSepKer):
@@ -77,13 +56,36 @@ class DConv2d(nn.Module):
 #                 fx(ips, out_chunnel, lk),
 #                 nn.BatchNorm2d(out_chunnel),
 #             )]
-#             ips += out_chunnel
+#             ips = out_chunnel
 #     def forward(self, X):
 #         #print(X.shape)
-#         for lyr in self.lyrs:
+#         X = self.actfunc(self.lyrs[0](X))
+#         for lyr in self.lyrs[1:]:
 #             o = self.actfunc(lyr(X))
-#             X = t.cat([X,o], 1)
+#             X += o
 #         return o
+
+
+class DConv2d(nn.Module):
+    def __init__(self,in_chunnels, out_chunnel,
+                 kernels = [3, 5, 7, ]*2,
+                 fx = Conv2DLinSepKer):
+        super(DConv2d, self).__init__()
+        self.lyrs = nn.ModuleList()
+        self.actfunc = f.leaky_relu
+        ips = in_chunnels
+        for lk in kernels:
+            self.lyrs += [nn.Sequential(
+                fx(ips, out_chunnel, lk),
+                nn.BatchNorm2d(out_chunnel),
+            )]
+            ips += out_chunnel
+    def forward(self, X):
+        #print(X.shape)
+        for lyr in self.lyrs:
+            o = self.actfunc(lyr(X))
+            X = t.cat([X,o], 1)
+        return o
 
 if __name__ == '__main__':
     dconv = DConv2d(3,10,fx=SameConv2d)
