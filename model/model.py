@@ -23,7 +23,7 @@ class CNN (nn.Module):
         self.convbase.append(Single_level_SSP2D(SPP_lvl))
         inps = SPP_lvl* SPP_lvl *d
 
-        #self.densebase.append(nn.Dropout(.4))
+        self.densebase.append(nn.Dropout(.5))
         for d in fdepth :
             self.densebase.append(nn.Linear(inps, d))
             self.densebase.append(nn.LeakyReLU())
