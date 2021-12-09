@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/weights/weight30.pth" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualize/v3 Same.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualize/v3 Same2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualize/v31 SameConv 2 .png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualize/v31 SameConv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist40.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist50.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist65.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist80.p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualize/pling.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize/pling.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +50,7 @@
       <recent name="E:\PhII Cov_clf\weights" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.fixDistrMetr">
+  <component name="RunManager" selected="Python.pling">
     <configuration name="Layers" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,6 +97,9 @@
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weights" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -127,9 +139,6 @@
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/visualize" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -146,11 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.pling" />
+        <item itemvalue="Python.pling" />
         <item itemvalue="Python.fixDistrMetr" />
         <item itemvalue="Python.pling" />
         <item itemvalue="Python.fixDistrMetr" />
-        <item itemvalue="Python.main" />
-        <item itemvalue="Python.main" />
       </list>
     </recent_temporary>
   </component>
@@ -195,14 +204,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1638487455362" />
-    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1638908767130">
+    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1639050430730">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.834@0.0.1536.834" timestamp="1638908767130" />
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1638798059310">
+    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.834@0.0.1536.834" timestamp="1639050430730" />
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1639050394469">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1638798059310" />
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1639050394469" />
     <state x="580" y="337" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638487433697">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

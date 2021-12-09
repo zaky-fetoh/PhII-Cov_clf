@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
+import pickle
 
 def fltting(trHist):
     tllis, talis= list(),list()
@@ -24,3 +25,10 @@ def fltandplt(trPro):
     plting(trl,val,'loss')
     plting(tra,vaa, 'acc')
 
+def load_train_hist(file_name):
+    with open(file_name, 'rb')as file:
+        hist = pickle.load(file)
+    return hist
+
+acc = load_train_hist(r'E:\PhII Cov_clf\weights\hist80.p')
+fltandplt(acc)
