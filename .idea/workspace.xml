@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/weights/hist102.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist114.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist126.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist130.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist82.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist98.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Capture.JPG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visualize/pling.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize/pling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/SPP_layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/SPP_layer.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

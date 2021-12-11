@@ -33,9 +33,10 @@ class Sp_pooling2D(nn.Module):
             out = torch.cat([out,
                              F.max_pool2d(X, (nx, ny),
                                           stride=(sx, sy)
-                                          ).view(b, d, -1)],
+                                          ).view(b, d, -1)[:,:,:i*i]],
                             -1)
-        return out[:, :, :self.tbins]
+            #print(out.shape)
+        return out
 
 
 class spp2D_layer(nn.Module):
@@ -68,7 +69,7 @@ class Single_level_SSP2D(nn.Module):
 
 
 if __name__ == '__main__':
-    for i in range(10,100):
+    for i in range(10,50):
         tens = torch.Tensor(1, 15, i, i)
-        sp = Single_level_SSP2D(10)
+        sp = spp2D_layer(10)
         out = sp(tens)
