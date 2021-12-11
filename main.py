@@ -4,15 +4,18 @@ import data_org as dorg
 
 
 """
-Hello I'm there
-test
+training a CNN with 8 multilevel SPP layer using maxpooling 
+as aggregating function
+traing schadule fir40ep -> 1e3
+       schadule sec50ep -> 1e4
+       schadule thr40ep -> 1e5
 """
 
 if __name__ == '__main__':
     pres = 80
     mdl.t.cuda.empty_cache()
     mobj = tr.Network(bs=16,ustep=256,cfx=mdl.SameConv2d)
-    mobj.opt = tr.optim.Adam(mobj.network.parameters(),1e-5)
-    mobj.load(pres)
-    mobj.fit(epoch=50,startwith=pres+1)
+    mobj.opt = tr.optim.Adam(mobj.network.parameters(),1e-3)
+    #mobj.load(pres)
+    mobj.fit(epoch=30,)#startwith=pres+1)
     #mobj.test()
