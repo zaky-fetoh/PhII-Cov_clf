@@ -31,7 +31,7 @@ class Sp_pooling2D(nn.Module):
             nx, ny = [ceil(k / i) for k in (x, y)]
             sx, sy = x // i, y // i
             out = torch.cat([out,
-                             F.max_pool2d(X, (nx, ny),
+                             F.avg_pool2d(X, (nx, ny),
                                           stride=(sx, sy)
                                           ).view(b, d, -1)[:,:,:i*i]],
                             -1)
