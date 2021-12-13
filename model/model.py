@@ -6,7 +6,7 @@ from model import*
 class CNN (nn.Module):
     def __init__(self, inshape = 1, clsnum=2,
                  cdepth =[32, 64, 128, 256, 32, 32],
-                 fdepth =[128,64,], SPP_lvl = 8,
+                 fdepth =[128,64,], SPP_lvl = 10,
                  cfx = Conv2DLinSepKer,
                  ):
         super(CNN, self).__init__()
@@ -20,8 +20,8 @@ class CNN (nn.Module):
                 self.convbase.append(nn.MaxPool2d(2))
                 pc-=1
             inps = d
-        self.convbase.append(spp2D_layer(SPP_lvl))
-        inps = self.convbase[-1].Spp.tbins *d
+        self.convbase.append(Single_level_SSP2D(SPP_lvl))
+        inps = self.convbase[-1].SSP.tbins *d
 
         self.densebase.append(nn.Dropout(.5))
         for d in fdepth :

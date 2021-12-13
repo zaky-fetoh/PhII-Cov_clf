@@ -57,7 +57,7 @@ class Single_level_SSP(nn.Module):
         i = self.level
         nx, ny = [ceil(k / i) for k in (x, y)]
         sx, sy = x // i, y // i
-        return F.max_pool2d(X, (nx, ny), stride=(sx, sy)
+        return F.avg_pool2d(X, (nx, ny), stride=(sx, sy)
                      ).view(b, d, -1)[:,:,:self.tbin]
 
 class Single_level_SSP2D(nn.Module):
