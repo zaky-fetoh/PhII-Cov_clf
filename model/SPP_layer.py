@@ -51,14 +51,14 @@ class spp2D_layer(nn.Module):
 class Single_level_SSP(nn.Module):
     def __init__(self, level = 20):
         super(Single_level_SSP, self).__init__()
-        self.level, self.tbin = level, level**2
+        self.level, self.tbins = level, level**2
     def forward(self, X):
         b, d, x, y = X.shape
         i = self.level
         nx, ny = [ceil(k / i) for k in (x, y)]
         sx, sy = x // i, y // i
         return F.avg_pool2d(X, (nx, ny), stride=(sx, sy)
-                     ).view(b, d, -1)[:,:,:self.tbin]
+                     ).view(b, d, -1)[:,:,:self.tbins]
 
 class Single_level_SSP2D(nn.Module):
     def __init__(self, level =10):
