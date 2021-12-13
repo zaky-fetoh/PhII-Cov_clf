@@ -4,7 +4,7 @@ import data_org as dorg
 
 
 """
-training a CNN with 8 multilevel SPP layer using averagpooling 
+training a CNN with single level SPP layer using averagpooling 
 as aggregating function
 traing schadule fir40ep -> 1e3
        schadule sec50ep -> 1e4
