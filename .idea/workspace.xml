@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="" />
+    <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/data_org/ScaleHist.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalRes/multiLVLAvpSameKernel.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalRes/multiLVLMxpSameKernel.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalRes/singleLVLAvpSameKernel.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalRes/singleLVLMxpSameKernel.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualize/multiscale freq and range.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visualize/singlescale freq and range.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist81.p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visualize/pling.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize/pling.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,7 +93,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="fixDistrMetr" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="ScaleHist" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -90,11 +101,11 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/weights" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data_org" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/weights/fixDistrMetr.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_org/ScaleHist.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,6 +139,9 @@
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/visualize" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -145,8 +159,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.pling" />
-        <item itemvalue="Python.pling" />
-        <item itemvalue="Python.pling" />
+        <item itemvalue="Python.ScaleHist" />
+        <item itemvalue="Python.ScaleHist" />
         <item itemvalue="Python.pling" />
         <item itemvalue="Python.pling" />
       </list>
@@ -177,10 +191,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="544" y="228" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.834@0.0.1536.834" timestamp="1638629041012" />
-    <state x="0" y="171" key="#xdebugger.XInspectDialog" timestamp="1638641565882">
+    <state x="176" y="266" key="#xdebugger.XInspectDialog" timestamp="1639419963690">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="0" y="171" key="#xdebugger.XInspectDialog/0.0.1536.834@0.0.1536.834" timestamp="1638641565882" />
+    <state x="176" y="266" key="#xdebugger.XInspectDialog/0.0.1536.834@0.0.1536.834" timestamp="1639419963690" />
     <state x="548" y="175" key="FileChooserDialogImpl" timestamp="1638487409989">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
@@ -197,10 +211,10 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.834@0.0.1536.834" timestamp="1639050430730" />
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1639408011216">
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1639570995401">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1639408011216" />
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1639570995401" />
     <state x="580" y="337" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638487433697">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
