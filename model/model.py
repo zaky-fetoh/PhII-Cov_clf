@@ -26,6 +26,7 @@ class CNN (nn.Module):
         self.densebase.append(nn.Dropout(.5))
         for d in fdepth :
             self.densebase.append(nn.Linear(inps, d))
+            self.densebase.append(nn.BatchNorm1d(d))
             self.densebase.append(nn.LeakyReLU())
             inps = d
         self.densebase.append(nn.Linear(d, clsnum))

@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/finalRes/Figure_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/finalRes/constract.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/model/ASPP_layer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visualize/dtsetfreq.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visualize/scaleAug.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_org/ScaleHist.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_org/ScaleHist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/Layers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/SPP_layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/SPP_layer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_org/augmentation.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_org/augmentation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
