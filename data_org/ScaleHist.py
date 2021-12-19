@@ -28,8 +28,8 @@ def avg(arr, w=3):
 class ScaleHist(object):
     def __init__(self, masks_path,
                  oscale=224,
-                 scales=[224 - 50, 224 - 25,
-                         224, 224 + 25, 224 + 50]):
+                 scales=[150 - 50, 224 - 25,
+                         224, 224 + 50, 512 ]):
         self.path = masks_path
         self.single_scale_hist = dict()
         self.multiscale_hist = dict()
@@ -89,11 +89,29 @@ def scat(ar,lbl):
     plt.ylabel('freq')
     plt.title(lbl)
 
+def gethistfreq(arr, scales_perbin = 1000):
+    lis= list()
+    i = 0
+    while i < arr.shape[0]:
+        lis.append(arr[i:i+scales_perbin].sum())
+        i += scales_perbin
+    return np.array(lis)
+
+
+
 if __name__ == '__main__':
     imp = r'E:\covdt_CoCo\DATASETS\QaTa-COV19\QaTa-COV19\Ground-truths'
     sh = ScaleHist(imp)
     sh.fit()
-    shis, mulhis = [avg(x,0) for x in sh.get_nphist()]
-    scat(shis,'single scale')
-    scat(mulhis, 'multiscale')
+    shis, mulhis = [avg(x,0)for x in sh.get_nphist()]
+
+
+    shistf, mulhistf = [gethistfreq(x,1000) for x in (shis, mulhis)]
+    plt.plot(shistf, label = 'single_scale')
+    # plt.legend()
+    # plt.figure( )
+    plt.plot(mulhistf,label = 'multiscale')
+    plt.legend()
+    # scat(shis,'single scale')
+    # scat(mulhis, 'multiscale')
 

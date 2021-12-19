@@ -25,13 +25,13 @@ class Sp_pooling2D(nn.Module):
 
     def forward(self, X):
         b, d, x, y = X.shape
-        out = F.max_pool2d(X, (x, y)
+        out = F.avg_pool2d(X, (x, y)
                            ).view(b, d, -1)
         for i in range(2, self.levels + 1):
             nx, ny = [ceil(k / i) for k in (x, y)]
             sx, sy = x // i, y // i
             out = torch.cat([out,
-                             F.avg_pool2d(X, (nx, ny),
+                             F.max_pool2d(X, (nx, ny),
                                           stride=(sx, sy)
                                           ).view(b, d, -1)[:,:,:i*i]],
                             -1)
@@ -57,7 +57,7 @@ class Single_level_SSP(nn.Module):
         i = self.level
         nx, ny = [ceil(k / i) for k in (x, y)]
         sx, sy = x // i, y // i
-        return F.avg_pool2d(X, (nx, ny), stride=(sx, sy)
+        return F.max_pool2d(X, (nx, ny), stride=(sx, sy)
                      ).view(b, d, -1)[:,:,:self.tbins]
 
 class Single_level_SSP2D(nn.Module):
