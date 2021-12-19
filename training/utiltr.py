@@ -157,6 +157,7 @@ def train_and_validate(net, trldr, valdr, tr_profile,
     aug, si = augm
     net.to(device=device)
     for e in range(epochs):
+        t.cuda.empty_cache()
         e += startwith
         tr_profile[e] = list()
 

@@ -9,7 +9,6 @@ class sconv2D(nn.Module):
     def __init__(self, inchannels, ochannels, kernals, rate):
         super(sconv2D, self).__init__()
         d = (rate * (kernals-1))//2
-        print(d)
         self.conv = nn.Conv2d(inchannels, 1, kernals,
                               padding= d, dilation=rate, )
         self.bn = nn.BatchNorm2d(1)
