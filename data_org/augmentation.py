@@ -23,10 +23,10 @@ class Freq_Jitter(object):
         no = self.mu + (no * self.sig)
         return np.fft.ifft2(self.eq(im, no)).real
 
-
+# [224 - 50, 224 - 25,
+#                                224, 224 + 25, 224 + 50]
 class RandScale(object):
-    def __init__(self, scales=[224 - 50, 224 - 25,
-                               224, 224 + 25, 224 + 50]):
+    def __init__(self, scales=[512, 265]):
         self.scales = scales
         self.new_scale()
         self._countinit()
