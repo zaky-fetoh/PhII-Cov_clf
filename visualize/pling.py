@@ -30,5 +30,5 @@ def load_train_hist(file_name):
         hist = pickle.load(file)
     return hist
 
-acc = load_train_hist(r'E:\PhII Cov_clf\weights\hist81.p')
+acc = load_train_hist(r'E:\PhII Cov_clf\weights\hist116.p')
 fltandplt(acc)

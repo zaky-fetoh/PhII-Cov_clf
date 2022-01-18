@@ -58,7 +58,7 @@ class Single_level_SSP(nn.Module):
         nx, ny = [ceil(k / i) for k in (x, y)]
         sx, sy = x // i, y // i
         return F.max_pool2d(X, (nx, ny), stride=(sx, sy)
-                     ).view(b, d, -1)[:,:,:self.tbins]
+                     ).view(b, d, -1)#[:,:,:self.tbins]
 
 class Single_level_SSP2D(nn.Module):
     def __init__(self, level =10):
@@ -69,7 +69,7 @@ class Single_level_SSP2D(nn.Module):
 
 
 if __name__ == '__main__':
-    for i in range(10,50):
-        tens = torch.Tensor(1, 15, i, i)
-        sp = spp2D_layer(10)
+        tens = torch.Tensor(1, 1, 62, 62)
+        sp = Single_level_SSP2D(10)
         out = sp(tens)
+        print(out.shape)
