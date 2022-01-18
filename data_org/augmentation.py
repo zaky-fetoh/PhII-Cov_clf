@@ -26,7 +26,7 @@ class Freq_Jitter(object):
 # [224 - 50, 224 - 25,
 #                                224, 224 + 25, 224 + 50]
 class RandScale(object):
-    def __init__(self, scales=[500, 300]):
+    def __init__(self, scales=[480, 240]):
         self.scales = scales
         self.new_scale()
         self._countinit()

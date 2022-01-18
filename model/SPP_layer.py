@@ -69,7 +69,8 @@ class Single_level_SSP2D(nn.Module):
 
 
 if __name__ == '__main__':
-        tens = torch.Tensor(1, 1, 62, 62)
+        #stable Scales 400 , 240 , 480
+        tens = torch.Tensor(1, 1, 60, 60)
         sp = Single_level_SSP2D(10)
         out = sp(tens)
         print(out.shape)

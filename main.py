@@ -14,7 +14,7 @@ traing schadule fir40ep -> 1e3
 if __name__ == '__main__':
     pres = 80
     mdl.t.cuda.empty_cache()
-    mobj = tr.Network(bs=16,ustep=256,cfx=mdl.ASPP)
+    mobj = tr.Network(bs=16,ustep=256,cfx=mdl.saspp)
     mobj.opt = tr.optim.Adam(mobj.network.parameters(),1e-3)
     #mobj.load(pres)
     mobj.fit(epoch=40,)#startwith=pres+1)
