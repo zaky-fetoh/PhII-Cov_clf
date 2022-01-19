@@ -32,6 +32,7 @@ files = [('multiLVLAvpSameKernel.p', 'multilevel SPP avgpooling'),
          ('singleLVLAvpSameKernel.p', 'single level SPP avgpooling'),
          ('singleLVLMxpSameKernel.p', 'single level SPP maxpooling'),
          ('ASPPNoGlobalContxt.p', 'ASPP No Global Context'),
+         ('hist38.p', 'CUrrent'),
          ]
 
 
@@ -52,4 +53,4 @@ def plting(train=True):
 
 
 if __name__ == '__main__':
-    plting(False)
+    plting(1)
