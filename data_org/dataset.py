@@ -65,7 +65,7 @@ def create_loader(dts, bs, ):
     return tdlr
 
 
-def getloaders(aug, trtes=[.5, .2, .3], bs=128):
+def getloaders(aug, trtes=[.7, .1, .3], bs=128):
     dts = QaTaCov(aug)
     tl = dts.__len__()
     slen = [int(x * tl) for x in trtes[:2]]
