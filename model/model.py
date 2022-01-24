@@ -6,7 +6,7 @@ from model import*
 class CNN (nn.Module):
     def __init__(self, inshape = 1, clsnum=2,
                  cdepth =[32, 64, 128, 128, 128,128],
-                 fdepth =[128,64,], SPP_lvl = 10,
+                 fdepth =[128,128,64], SPP_lvl = 10,
                  cfx = Conv2DLinSepKer,
                  ):
         super(CNN, self).__init__()

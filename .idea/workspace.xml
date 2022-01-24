@@ -2,20 +2,34 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a44b09d0-42b5-40b8-904d-75dd484261f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/finalRes/hist32.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/finalRes/hist34.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/finalRes/hist35.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/finalRes/hist40.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist32.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist34.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist35.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weights/hist40.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalRes/hist401.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalRes/hist47.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalRes/hist87.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalRes/hist93.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/finalRes/hist97.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist41.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist47.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist87.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist93.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/hist97.p" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weights/v1WBN and with dropout/fixDistrMetr.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/finalRes/constract.py" beforeDir="false" afterPath="$PROJECT_DIR$/finalRes/constract.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/finalRes/hist38.p" beforeDir="false" afterPath="$PROJECT_DIR$/finalRes/hist38.p" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalRes/hist32.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalRes/hist34.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalRes/hist35.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalRes/hist38.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/finalRes/hist40.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/SPP_layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/SPP_layer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/model/WASPP_layer.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/WASPP_layer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/model.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visualize/pling.py" beforeDir="false" afterPath="$PROJECT_DIR$/visualize/pling.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weights/hist47.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/fixDistrMetr.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/hist32.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/hist34.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/hist35.p" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weights/hist40.p" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,9 +134,6 @@
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/finalRes" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -141,9 +152,6 @@
       <module name="PhII Cov_clf" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/visualize" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -161,10 +169,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.WASPP_layer" />
-        <item itemvalue="Python.constract" />
         <item itemvalue="Python.pling" />
         <item itemvalue="Python.constract" />
         <item itemvalue="Python.pling" />
+        <item itemvalue="Python.constract" />
       </list>
     </recent_temporary>
   </component>
@@ -209,14 +217,14 @@
       <screen x="0" y="0" width="1536" height="834" />
     </state>
     <state x="361" y="154" key="Vcs.Push.Dialog.v2/0.0.1536.834@0.0.1536.834" timestamp="1638487455362" />
-    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1642501124823">
+    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1" timestamp="1642872841332">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.834@0.0.1536.834" timestamp="1642501124823" />
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1642869817650">
+    <state x="214" y="126" key="com.intellij.execution.console.ConsoleHistoryController$MyBrowseAction$1/0.0.1536.834@0.0.1536.834" timestamp="1642872841332" />
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog" timestamp="1642958949307">
       <screen x="0" y="0" width="1536" height="834" />
     </state>
-    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1642869817650" />
+    <state x="477" y="246" key="com.intellij.ide.util.TipDialog/0.0.1536.834@0.0.1536.834" timestamp="1642958949307" />
     <state x="580" y="337" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1638487433697">
       <screen x="0" y="0" width="1536" height="834" />
     </state>

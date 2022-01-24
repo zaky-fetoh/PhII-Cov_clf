@@ -32,7 +32,8 @@ files = [('multiLVLAvpSameKernel.p', 'multilevel SPP avgpooling'),
          ('singleLVLAvpSameKernel.p', 'single level SPP avgpooling'),
          ('singleLVLMxpSameKernel.p', 'single level SPP maxpooling'),
          ('ASPPNoGlobalContxt.p', 'ASPP No Global Context'),
-         ('hist40.p', 'CUrrent'),
+         ('hist401.p', 'swatchable waightedASPP'),
+         ('hist97.p', 'spatial waighted ASPP'),
          ]
 
 
